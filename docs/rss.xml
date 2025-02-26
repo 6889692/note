@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MGT note</title><link>https://note.mgta.us.kg</link><description>生生不息，止于至善</description><copyright>MGT note</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/avatar.svg</url><title>avatar</title><link>https://note.mgta.us.kg</link></image><lastBuildDate>Mon, 14 Oct 2024 16:40:52 +0000</lastBuildDate><managingEditor>MGT note</managingEditor><ttl>60</ttl><webMaster>MGT note</webMaster><item><title>GitHub 无法访问的方法</title><link>https://note.mgta.us.kg/post/GitHub%20-wu-fa-fang-wen-de-fang-fa.html</link><description># 方法一：修改 Hosts 文件&#13;
+Hosts路径： &#13;
+```md&#13;
+C:\Windows\System32\drivers\etc\hosts&#13;
+```&#13;
+```md&#13;
+140.82.113.3 github.com&#13;
+140.82.114.4 gist.github.com&#13;
+185.199.108.133 assets-cdn.github.com&#13;
+151.101.184.133 raw.githubusercontent.com&#13;
+151.101.185.194 gist.githubusercontent.com&#13;
+```&#13;
+&#13;
+# 方法二：DNS 解析&#13;
+使用一些公共的 DNS 服务，如 Google 的 8.8.8.8。</description><guid isPermaLink="true">https://note.mgta.us.kg/post/GitHub%20-wu-fa-fang-wen-de-fang-fa.html</guid><pubDate>Mon, 14 Oct 2024 16:40:25 +0000</pubDate></item><item><title>CloudFlare优选汇总</title><link>https://note.mgta.us.kg/post/CloudFlare-you-xuan-hui-zong.html</link><description>https://cf.090227.xyz维护的优选官方域名&#13;
+cf.090227.xyz#三网自适应分流官方优选&#13;
+ct.090227.xyz#电信官方优选&#13;
+cmcc.090227.xyz#移动官方优选&#13;
+&#13;
+------&#13;
+&#13;
+常用的优选官方域名&#13;
+shopify.com&#13;
+time.is&#13;
+icook.hk&#13;
+icook.tw&#13;
+ip.sb&#13;
+japan.com&#13;
+malaysia.com&#13;
+russia.com&#13;
+singapore.com&#13;
+skk.moe&#13;
+www.visa.com.sg&#13;
+www.visa.com.hk&#13;
+www.visa.com.tw&#13;
+www.visa.co.jp&#13;
+www.visakorea.com&#13;
+www.gco.gov.qa&#13;
+www.gov.se&#13;
+www.gov.ua&#13;
+&#13;
+------&#13;
+&#13;
+第三方维护的优选官方域名（未备注出处的为未知）&#13;
+cfip.xxxxxxxx.tk#OTC提供维护官方优选&#13;
+bestcf.onecf.eu.org#Mingyu提供维护官方优选&#13;
+cf.zhetengsha.eu.org#小一提供维护官方优选&#13;
+acjp2.cloudflarest.link#KJKKK维护官方优选&#13;
+achk.cloudflarest.link#KJKKK维护官方优选&#13;
+xn--b6gac.eu.org&#13;
+yx.887141.xyz&#13;
+8.889288.xyz&#13;
+cfip.1323123.xyz&#13;
+cf.515188.xyz&#13;
+cf-st.annoy.eu.org&#13;
+cf.0sm.com&#13;
+cf.877771.xyz&#13;
+cf.345673.xyz&#13;
+&#13;
+------&#13;
+&#13;
+第三方维护的优选反代域名&#13;
+bestproxy.onecf.eu.org#Mingyu提供维护反代优选&#13;
+proxy.xxxxxxxx.tk#OTC提供维护反代优选&#13;
+47.243.237.160   proxy.xxxxxxxx.tk   ts.hpc.tw   edgetunnel.anycast.eu.org   bestproxy.onecf.eu.org   cdn-all.xn--b6gac.eu.org   cdn.xn--b6gac.eu.org&#13;
+&#13;
+------&#13;
+&#13;
+第三方维护的优选官方IP的API&#13;
+https://ipdb.api.030101.xyz/?type=bestcf&amp;country=true&#13;
+https://addressesapi.090227.xyz/CloudFlareYes&#13;
+https://addressesapi.090227.xyz/ip.164746.xyz&#13;
+第三方维护的优选反代IP的API&#13;
+https://ipdb.api.030101.xyz/?type=bestproxy&amp;country=true&#13;
+&#13;
+------&#13;
+&#13;
+更多优选内容可自行查看&#13;
+https://cf.090227.xyz&#13;
+https://ipdb.api.030101.xyz&#13;
+https://monitor.gacjie.cn/page/cloudflare/cname.html&#13;
+https://ip.164746.xyz&#13;
+https://stock.hostmonit.com/CloudFlareYes&#13;
+&#13;
+------&#13;
+&#13;
+HTTP支持端口：80，8080，8880，2052，2082，2086，2095；&#13;
+HTTPS支持端口：443，2053，2083，2087，2096，8443。</description><guid isPermaLink="true">https://note.mgta.us.kg/post/CloudFlare-you-xuan-hui-zong.html</guid><pubDate>Mon, 14 Oct 2024 11:33:28 +0000</pubDate></item><item><title>gitblog@yihong0618博客安装教程</title><link>https://note.mgta.us.kg/post/gitblog%40yihong0618-bo-ke-an-zhuang-jiao-cheng.html</link><description># 新建一个仓库gitblog&#13;
+&#13;
+## 新建仓库G_KEY&#13;
+&#13;
+### a. 新生成一个[github token](https://github.com/settings/tokens)，&#13;
+New personal access token (classic)&#13;
+scope勾选： repo、workflow、gist、user，&#13;
+生成后复制到一个安全的地方存储后面备用；&#13;
+### b. 配置[Repository secrets](https://github.com/humyna/gitblog/settings/secrets/actions)&#13;
+settings--&gt;secrets and variables--&gt;Actions--&gt;new repository secrets,名称为G_KEY,值就是上面的github token&#13;
+&#13;
+&gt; 注意：这个G_KEY会在后面的gene_readme.yml文件中使用&#13;
+&#13;
+------&#13;
+下载yihong0618开源的[这个项目](https://github.com/yihong0618/gitblog)，将其中除了feed.xml的文件全部copy到第一步项目中。</description><guid isPermaLink="true">https://note.mgta.us.kg/post/gitblog%40yihong0618-bo-ke-an-zhuang-jiao-cheng.html</guid><pubDate>Sun, 13 Oct 2024 10:37:19 +0000</pubDate></item><item><title>月份英文缩写</title><link>https://note.mgta.us.kg/post/yue-fen-ying-wen-suo-xie.html</link><description>一月 January = Jan&#13;
+&#13;
+二月 February = Feb&#13;
+&#13;
+三月 March = Mar&#13;
+&#13;
+四月 April = Apr&#13;
+&#13;
+五月 May = May&#13;
+&#13;
+六月 June = Jun&#13;
+&#13;
+七月 July = Jul&#13;
+&#13;
+八月 August = Aug&#13;
+&#13;
+九月 September = Sep / Sept&#13;
+&#13;
+十月 October = Oct&#13;
+&#13;
+十一月 November = Nov&#13;
+&#13;
+十二月 December = Dec。</description><guid isPermaLink="true">https://note.mgta.us.kg/post/yue-fen-ying-wen-suo-xie.html</guid><pubDate>Sun, 13 Oct 2024 09:42:58 +0000</pubDate></item><item><title>图片测试</title><link>https://note.mgta.us.kg/post/tu-pian-ce-shi.html</link><description>图
+
+![4K_2023_오토살롱위크___레이싱모델__유민___(Racing_Model)_Auto_Salon_Week_모터쇼_Moter_Show_(_2023.9.8)_1-24_screenshot.jpg](https://github.com/user-attachments/assets/8c5c1964-4865-40f4-8fdb-b7568416960a)
+
+![4K_2023_오토살롱위크___레이싱모델__유민___(Racing_Model)_Auto_Salon_Week_모터쇼_Moter_Show_(_2023.9.8)_0-59_screenshot.jpg](https://github.com/user-attachments/assets/04e3fad3-d3f4-4fad-8c2b-e4f65cfbe363)
+
+![4K_레이싱모델_김유민_오토살롱위크_킨텍스_포즈_slender_asian_model_Look_Book_pose_cam3_0-3_screenshot.jpg](https://github.com/user-attachments/assets/e44c6b0b-3d7d-4335-a347-34df338e46da)
+
+![모델_김유민_2023_오토살롱위크_직캠_#2_Model_Kim_Yumin_2023_Auto_Salon_Week_Fancam_핫팬츠_2023.09.08_0-27_screenshot.jpg](https://github.com/user-attachments/assets/1ef9e060-75af-4733-86e7-1f63ad6fbec1)
+
+![(_ⓛ_ω_ⓛ__)_김유민_,_Kim_YuMin_💓빨간_윈피스_그리고_레이싱모델_김유민.💓_1-19_screenshot.jpg](https://github.com/user-attachments/assets/2dea0dcd-8fc5-4a5f-9337-cb542dd3ec93)
+
+![모델_김유민_2023_오토살롱위크_직캠_#2_Model_Kim_Yumin_2023_Auto_Salon_Week_Fancam_핫팬츠_2023.09.08_3-10_screenshot.jpg](https://github.com/user-attachments/assets/8b97754d-8c11-4c9c-a064-6e9cff8cdc16)
+
+。</description><guid isPermaLink="true">https://note.mgta.us.kg/post/tu-pian-ce-shi.html</guid><pubDate>Sat, 12 Oct 2024 19:47:05 +0000</pubDate></item><item><title>Markdown语法总览</title><link>https://note.mgta.us.kg/post/Markdown-yu-fa-zong-lan.html</link><description>## 在线 Markdown 编辑器&#13;
+- 地址：[点击前往](https://markdown.buxiantang.top/)。</description><guid isPermaLink="true">https://note.mgta.us.kg/post/Markdown-yu-fa-zong-lan.html</guid><pubDate>Sat, 12 Oct 2024 04:44:58 +0000</pubDate></item><item><title>好用的Windows应用推荐</title><link>https://note.mgta.us.kg/post/hao-yong-de-Windows-ying-yong-tui-jian.html</link><description>好用的Windows应用推荐&#13;
+==============&#13;
+&#13;
+[](https://blog.meekdai.com/ '首页')[](https://github.com/Meekdai/meekdai.github.io/issues/48 'Issue')[](https://blog.meekdai.com/post/hao-yong-de-Windows-ying-yong-tui-jian.html '切换主题')&#13;
+&#13;
+那些我必安装的Awesome Windows App推荐。</description><guid isPermaLink="true">https://note.mgta.us.kg/post/hao-yong-de-Windows-ying-yong-tui-jian.html</guid><pubDate>Fri, 11 Oct 2024 20:44:38 +0000</pubDate></item><item><title>markdown测试页面</title><link>https://note.mgta.us.kg/post/markdown-ce-shi-ye-mian.html</link><description>markdown测试页面&#13;
+============&#13;
+&#13;
+[](https://blog.meekdai.com/ '首页')[](https://github.com/Meekdai/meekdai.github.io/issues/4 'Issue')[](https://blog.meekdai.com/post/markdown-ce-shi-ye-mian.html '切换主题')&#13;
+&#13;
+这是一个markdown格式的测试页面，也是个人经常会使用的格式记录。</description><guid isPermaLink="true">https://note.mgta.us.kg/post/markdown-ce-shi-ye-mian.html</guid><pubDate>Fri, 11 Oct 2024 20:21:21 +0000</pubDate></item><item><title>Gmeek 超轻量级个人博客，All in Github</title><link>https://note.mgta.us.kg/post/Gmeek%20-chao-qing-liang-ji-ge-ren-bo-ke-%EF%BC%8CAll%20in%20Github.html</link><description>Gmeek快速上手&#13;
+=========&#13;
+&#13;
+[](https://blog.meekdai.com/ '首页')[](https://github.com/Meekdai/meekdai.github.io/issues/39 'Issue')[](https://blog.meekdai.com/post/Gmeek-kuai-su-shang-shou.html '切换主题')&#13;
+&#13;
+[Gmeek](https://github.com/Meekdai/Gmeek) 一个博客框架，超轻量级个人博客模板，完全基于`Github Pages` 、 `Github Issues` 和 `Github Actions`，可以称作`All in Github`。</description><guid isPermaLink="true">https://note.mgta.us.kg/post/Gmeek%20-chao-qing-liang-ji-ge-ren-bo-ke-%EF%BC%8CAll%20in%20Github.html</guid><pubDate>Fri, 11 Oct 2024 18:43:20 +0000</pubDate></item><item><title>about</title><link>https://note.mgta.us.kg/about.html</link><description>这是我的网络笔记本，保存一些有趣的文章。</description><guid isPermaLink="true">https://note.mgta.us.kg/about.html</guid><pubDate>Sat, 12 Oct 2024 07:41:27 +0000</pubDate></item></channel></rss>
