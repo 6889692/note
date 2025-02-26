@@ -15,6 +15,11 @@ Hosts路径：
 ```md
 C:\Windows\System32\drivers\etc\hosts
 ```
+刷新 dns：  
+```md
+ ipconfig /flushdns
+```
+update url: [https://hosts.gitcdn.top/hosts.txt](https://hosts.gitcdn.top/hosts.txt){target='_blank'}
 ```md
 140.82.113.3 github.com
 140.82.114.4 gist.github.com
@@ -31,6 +36,11 @@ Hosts路径：
 ```md
 C:\Windows\System32\drivers\etc\hosts
 ```
+刷新 dns：  
+```md
+ ipconfig /flushdns
+```
+update url: [https://hosts.gitcdn.top/hosts.txt](https://hosts.gitcdn.top/hosts.txt){target='_blank'}
 ```md
 140.82.113.3 github.com
 140.82.114.4 gist.github.com
@@ -42,7 +52,7 @@ C:\Windows\System32\drivers\etc\hosts
 # 方法二：DNS 解析
 使用一些公共的 DNS 服务，如 Google 的 8.8.8.8。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://note.mgta.us.kg/post/GitHub%20-wu-fa-fang-wen-de-fang-fa.html">
+<meta property="og:url" content="/note/post/GitHub%20-wu-fa-fang-wen-de-fang-fa.html">
 <meta property="og:image" content="/avatar.svg">
 <title>GitHub 无法访问的方法</title>
 <link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
@@ -89,13 +99,13 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="header">
 <h1 class="postTitle">GitHub 无法访问的方法</h1>
 <div class="title-right">
-    <a href="https://note.mgta.us.kg" id="buttonHome" class="btn btn-invisible circle" title="首页">
+    <a href="/note" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
             <path id="pathHome" fill-rule="evenodd"></path>
         </svg>
     </a>
     
-    <a href="https://github.com/692/note/issues/12" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/6889692/note/issues/4" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -114,6 +124,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <div class="markdown-body" id="postBody"><h1>方法一：修改 Hosts 文件</h1>
 <p>Hosts路径：</p>
 <div class="highlight highlight-text-md"><pre class="notranslate">C:\Windows\System32\drivers\etc\hosts</pre></div>
+<p>刷新 dns：</p>
+<div class="highlight highlight-text-md"><pre class="notranslate"> ipconfig /flushdns</pre></div>
+<p>update url: <a href="https://hosts.gitcdn.top/hosts.txt" rel="nofollow">https://hosts.gitcdn.top/hosts.txt</a>{target="_blank"}</p>
 <div class="highlight highlight-text-md"><pre class="notranslate">140.82.113.3 github.com
 140.82.114.4 gist.github.com
 185.199.108.133 assets-cdn.github.com
@@ -139,7 +152,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <div class="comments" id="comments"></div>
 
 </div>
-    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://note.mgta.us.kg">MGT note</a></div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="/note">MGT note</a></div>
 <div id="footer2">
     <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
 </div>
@@ -204,7 +217,7 @@ function openComments(){
 
     script=document.createElement("script");
     script.setAttribute("src","https://utteranc.es/client.js");
-    script.setAttribute("repo","692/note");
+    script.setAttribute("repo","6889692/note");
     script.setAttribute("issue-term","title");
     
     if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}

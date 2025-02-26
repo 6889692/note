@@ -3,6 +3,11 @@ Hosts路径：
 ```md
 C:\Windows\System32\drivers\etc\hosts
 ```
+刷新 dns：  
+```md
+ ipconfig /flushdns
+```
+update url: [https://hosts.gitcdn.top/hosts.txt](https://hosts.gitcdn.top/hosts.txt){target="_blank"}
 ```md
 140.82.113.3 github.com
 140.82.114.4 gist.github.com
